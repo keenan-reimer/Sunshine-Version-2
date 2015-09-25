@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="@drawable/touch_selector"
+    android:gravity="center_vertical" >
+
+    <FrameLayout
+        android:layout_width="60dp"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/list_item_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="7" >
+
+        <TextView
+            android:id="@+id/list_item_date_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/listItemLargeTextStyle"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-condensed" />
+
+        <TextView
+            android:id="@+id/list_item_forecast_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/listItemSmallTextStyle"
+            android:fontFamily="sans-serif-condensed" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:gravity="center_horizontal"
+        android:layout_weight="5" >
+
+        <TextView
+            android:id="@+id/list_item_high_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/listItemLargeTextStyle"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-condensed" />
+
+        <TextView
+            android:id="@+id/list_item_low_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/listItemSmallTextStyle"
+            android:fontFamily="sans-serif-condensed" />
+
+    </LinearLayout>
+</LinearLayout>

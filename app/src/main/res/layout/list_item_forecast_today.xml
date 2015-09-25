@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:paddingTop="22dp"
+    android:paddingBottom="22dp"
+    android:background="@drawable/touch_selector_today" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_marginLeft="60dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/list_item_date_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-condensed" />
+
+        <TextView
+            android:id="@+id/list_item_high_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="68sp"
+            android:fontFamily="sans-serif-light" />
+
+        <TextView
+            android:id="@+id/list_item_low_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="36sp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-light" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1."
+        android:gravity="center_horizontal">
+
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_item_icon"
+                android:paddingBottom="16dp" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/list_item_forecast_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-condensed" />
+
+    </LinearLayout>
+
+</LinearLayout>

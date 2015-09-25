@@ -1,0 +1,17 @@
+<resources>
+
+    <style name="ForecastListStyle">
+        <item name="android:choiceMode">singleChoice</item>
+    </style>
+
+    <!-- Theme for today & high TextViews in forecast list item. -->
+    <style name="listItemLargeTextStyle">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- Theme for forecast and low TextViews in forecast list item. -->
+    <style name="listItemSmallTextStyle">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+</resources>
